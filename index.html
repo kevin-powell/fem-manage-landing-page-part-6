@@ -16,9 +16,9 @@
   <header class="primary-header">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="#">
+        <a href="#" aria-label="home">
           <svg class="logo" width="146" height="24">
-            <use xlink:href="/images/logo.svg#logo"></use>
+            <use xlink:href="images/logo.svg#logo"></use>
           </svg>
         </a>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -62,7 +62,7 @@
     <section class="padding-block-900">
       <div class="container">
         <div class="even-columns">
-          <div class="flow">
+          <div class="flow text-center-sm-only margi" style="--flow-spacer: 1.5rem">
             <h2 class="fs-secondary-heading fw-bold">What’s different about Manage?</h2>
             <p>Manage provides all the functionality your team needs, without the complexity. Our software is
               tailor-made for modern
@@ -72,8 +72,9 @@
             <ul class="numbered-items | flow" role="list">
               <li>
                 <div class="flow" style="--flow-spacer: 1em">
-                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
-                  <p data-width="wide">See how your day-to-day tasks fit into the wider vision. Go from tracking
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Track company-wide progress</h3>
+                  <p class="numbered-items__body" data-width="wide">See how your day-to-day tasks fit into the wider
+                    vision. Go from tracking
                     progress at the milestone
                     level all the way
                     done to the smallest of details. Never lose sight of the bigger picture again.</p>
@@ -81,9 +82,10 @@
               </li>
               <li>
                 <div class="flow" style="--flow-spacer: 1em">
-                  <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
-                  <p data-width="wide">Set internal delivery estimates and track progress toward company goals. Our
-                    customizable dashboard
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Advanced built-in reports</h3>
+                  <p class="numbered-items__body" data-width="wide">Set internal delivery estimates and track progress
+                    toward company goals. Our
+                    customisable dashboard
                     helps you build out
                     the reports you need to keep key stakeholders informed.</p>
 
@@ -91,8 +93,9 @@
               </li>
               <li>
                 <div class="flow" style="--flow-spacer: 1em">
-                  <h3 class="fs-600 fw-bold">Everything you need in one place</h3>
-                  <p data-width="wide">Stop jumping from one service to another to communicate, store files, track tasks
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Everything you need in one place</h3>
+                  <p class="numbered-items__body" data-width="wide">Stop jumping from one service to another to
+                    communicate, store files, track tasks
                     and share
                     documents. Manage offers an
                     all-in-one team productivity solution.</p>
@@ -131,44 +134,35 @@
         <div class="primary-footer-logo-social">
           <a href="#" aria-label="home">
             <svg class="logo" width="146" height="24">
-              <use xlink:href="/images/logo.svg#logo"></use>
+              <use xlink:href="images/logo.svg#logo"></use>
             </svg>
           </a>
+
           <ul class="social-list" role="list" aria-label="Social links">
-            <li>
-              <a aria-label="facebook" href="#">
+            <li><a aria-label="facebook" href="#">
                 <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
+                  <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                </svg></a>
             </li>
-            <li>
-              <a aria-label="youtube" href="#">
+            <li><a aria-label="youtube" href="#">
                 <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-youtube"></use>
+                  <use xlink:href="images/social-icons.svg#icon-youtube"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <!-- svg social icons: https://www.youtube.com/watch?v=eX9JhQtMxCg&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=8&ab_channel=KevinPowell; 
-                at 06:50 -->
-              <a aria-label="twitter" href="#">
+              </a></li>
+            <li><a aria-label="twitter" href="#">
                 <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-twitter"></use>
+                  <use xlink:href="images/social-icons.svg#icon-twitter"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a aria-label="pinterest" href="#">
+              </a></li>
+            <li><a aria-label="pinterest" href="#">
                 <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-pinterest"></use>
+                  <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
                 </svg>
-              </a>
-            </li>
+              </a></li>
             <li>
-              <a aria-label="instagram" href="#">
+              <a aria-label="instragram" href="#">
                 <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-instagram"></use>
+                  <use xlink:href="images/social-icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -189,7 +183,7 @@
         </div>
         <div class="primary-footer-form">
           <form action="">
-            <input type="email">
+            <input type="email" placeholder="Enter email">
             <button class="button" data-shadow="none">Go</button>
           </form>
           <p>Copyright 2020. All Rights Reserved</p>

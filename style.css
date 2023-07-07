@@ -213,7 +213,7 @@ p[data-width='wide'] {
 @media (max-width: 50em) {
 	.primary-navigation {
 		display: none;
-
+		z-index: 10;
 		position: fixed;
 		padding: var(--size-700);
 		inset: 7rem var(--size-400) auto;
@@ -222,7 +222,6 @@ p[data-width='wide'] {
 		background: var(--clr-neutral-100);
 		border-radius: var(--size-100);
 		box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
-		z-index: 10;
 	}
 
 	.primary-header[data-overlay]::before {
@@ -260,7 +259,7 @@ p[data-width='wide'] {
 	}
 }
 
-/*  footer */
+/* footer */
 
 .primary-footer {
 	--logo-color: var(--clr-neutral-100);
@@ -269,7 +268,10 @@ p[data-width='wide'] {
 .primary-footer-wrapper {
 	display: grid;
 	gap: var(--size-700);
-	grid-template-areas: 'form' 'nav' 'logo-social';
+	grid-template-areas:
+		'form'
+		'nav'
+		'logo-social';
 }
 
 .primary-footer-logo-social {
@@ -297,7 +299,7 @@ p[data-width='wide'] {
 	gap: var(--size-200);
 }
 
-input:where([type='text'], [type='email']) {
+input:where([type='text'], [type='email'], ) {
 	border-radius: 100vw;
 	border: 0;
 	padding: var(--size-300) var(--size-400);
@@ -307,6 +309,7 @@ input:where([type='text'], [type='email']) {
 	.primary-footer-wrapper {
 		grid-template-areas: 'logo-social nav form';
 	}
+
 	.primary-footer-logo-social {
 		align-items: flex-start;
 		justify-content: space-between;
@@ -336,7 +339,7 @@ input:where([type='text'], [type='email']) {
 	color: var(--clr-accent-400);
 }
 
-/*  social list */
+/* social list */
 
 .social-list {
 	display: flex;
@@ -351,17 +354,6 @@ input:where([type='text'], [type='email']) {
 
 .social-list a:is(:hover, :focus) .social-icon {
 	fill: var(--clr-accent-400);
-}
-
-@media (min-width: 50em) {
-	.social-list {
-		display: flex;
-		gap: var(--size-300);
-	}
-
-	.social-icon {
-		width: var(--size-500);
-	}
 }
 
 /* cta */
@@ -390,6 +382,74 @@ input:where([type='text'], [type='email']) {
 	opacity: 0.1;
 }
 
+/* numbered items */
+
+.numbered-items {
+	counter-reset: count;
+	width: fit-content;
+	margin-inline: auto;
+}
+
+.numbered-items li {
+	counter-increment: count;
+}
+
+.numbered-items div {
+	display: grid;
+	position: relative;
+	align-items: center;
+	column-gap: var(--size-300);
+	grid-template-columns: min-content 1fr;
+}
+
+.numbered-items__title {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	line-height: 1;
+}
+
+.numbered-items__body {
+	grid-column: 1 / -1;
+}
+
+@media (min-width: 30em) {
+	.numbered-items__body {
+		grid-column: 2 / -1;
+	}
+}
+
+.numbered-items div::before,
+.numbered-items div::after {
+	height: 40px;
+}
+
+.numbered-items div::before {
+	content: '0' counter(count);
+	display: flex;
+	align-items: center;
+	color: var(--clr-neutral-100);
+	font-weight: var(--fw-bold);
+	background-color: var(--clr-accent-400);
+	padding: 0 var(--size-500);
+	border-radius: 100vw;
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
+@media (max-width: 30em) {
+	.numbered-items div::after {
+		--bg: var(--clr-accent-100);
+		content: '';
+		display: block;
+		z-index: -1;
+		border-radius: 100vw 0 0 100vw;
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+		box-shadow: 5em 0 0 var(--bg);
+		background: var(--bg);
+	}
+}
+
 /* Utility classes */
 
 .visually-hidden {
@@ -406,9 +466,9 @@ input:where([type='text'], [type='email']) {
 
 .container {
 	--max-width: 1110px;
-	--padding: 1rem;
+	--container-padding: 1rem;
 
-	width: min(var(--max-width), 100% - (var(--padding) * 2));
+	width: min(var(--max-width), 100% - (var(--container-padding) * 2));
 	margin-inline: auto;
 }
 
@@ -440,6 +500,24 @@ input:where([type='text'], [type='email']) {
 
 :where(.flow :not(:first-child)) {
 	margin-top: var(--flow-spacer, 3em);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-center p {
+	margin-inline: auto;
+}
+
+@media (max-width: 50em) {
+	.text-center-sm-only {
+		text-align: center;
+	}
+
+	.text-center-sm-only p {
+		margin-inline: auto;
+	}
 }
 
 .text-primary-400 {
@@ -511,6 +589,10 @@ input:where([type='text'], [type='email']) {
 }
 .padding-block-700 {
 	padding-block: var(--size-700);
+}
+
+.margin-bottom-700 {
+	margin-block-end: var(--size-700);
 }
 
 .display-sm-none {
