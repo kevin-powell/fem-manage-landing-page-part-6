@@ -386,7 +386,6 @@ input:where([type='text'], [type='email'], ) {
 
 .numbered-items {
 	counter-reset: count;
-	width: -moz-fit-content;
 	width: fit-content;
 	margin-inline: auto;
 }
