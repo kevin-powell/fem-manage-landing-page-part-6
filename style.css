@@ -450,6 +450,17 @@ input:where([type='text'], [type='email'], ) {
 	}
 }
 
+/* slider */
+
+.slider {
+	display: flex;
+}
+
+.slider > * {
+	width: 100%;
+	flex: 0 0 auto;
+}
+
 /* Utility classes */
 
 .visually-hidden {
