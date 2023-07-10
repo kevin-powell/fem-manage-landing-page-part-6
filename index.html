@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
 </head>
 
 <body>
@@ -110,32 +111,53 @@
       </div>
     </section>
 
-    <section class="carousel | padding-block-700 text-center">
+    <section class="carousel | padding-block-700  text-center">
       <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
-
       <!-- Carousel here -->
-
       <ul class="slider">
         <li>
-          <img src="/images/avatar-ali.png" alt="avatar">
-          <h3 class="fw-bold">Ali Bravo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur aut officia quae suscipit
-            provident dolores, praesentium quisquam accusantium?</p>
+          <img src="images/avatar-anisha.png" alt="">
+
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Anisha Li</h3>
+            <p data-width="wide">“Manage has supercharged our team’s workflow. The ability to maintain visibility on
+              larger milestones at all times keeps
+              everyone motivated.”</p>
+          </div>
         </li>
-        <li><img src="/images/avatar-anisha.png" alt="avatar">
-          <h3 class="fw-bold">Anisha</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur aut officia quae suscipit
-            provident dolores, praesentium quisquam accusantium?</p>
+        <li>
+          <img src="images/avatar-ali.png" alt="">
+
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Ali Bravo</h3>
+            <p data-width="wide">“We have been able to cancel so many other subscriptions since using Manage. There is
+              no
+              more cross-channel
+              confusion
+              and everyone is much more focused.”</p>
+          </div>
         </li>
-        <li><img src="/images/avatar-richard.png" alt="avatar">
-          <h3 class="fw-bold">Richard</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur aut officia quae suscipit
-            provident dolores, praesentium quisquam accusantium?</p>
+        <li>
+          <img src="images/avatar-richard.png" alt="">
+
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Richard Watts</h3>
+            <p data-width="wide">“Manage allows us to provide structure and process. It keeps us organized and focused.
+              I
+              can’t stop recommending them to
+              everyone I talk to!” </p>
+          </div>
         </li>
-        <li><img src="/images/avatar-shanai.png" alt="avatar">
-          <h3 class="fw-bold">Shanai</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur aut officia quae suscipit
-            provident dolores, praesentium quisquam accusantium?</p>
+        <li>
+          <img src="images/avatar-shanai.png" alt="">
+
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Shanai Gough</h3>
+            <p data-width="wide">“Their software allows us to track, manage and collaborate on our projects from
+              anywhere.
+              It keeps the whole team
+              in-sync without being intrusive.” </p>
+          </div>
         </li>
       </ul>
       <button class="button">Get Started</button>
