@@ -529,6 +529,26 @@ input:where([type='text'], [type='email'], ) {
 	background: var(--clr-accent-400);
 }
 
+/* image whith blod bg */
+
+.image-whith-blod_bg {
+	/* position: relative; */
+}
+
+.image-whith-blod_bg::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	width: 400px;
+	aspect-ratio: 1;
+	background-image: url('images/bg-tablet-pattern.svg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	border: 1px solid red;
+}
+
 /* Utility classes */
 
 .visually-hidden {
