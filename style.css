@@ -686,7 +686,7 @@ input:where([type='text'], [type='email'], ) {
 	margin-inline: auto;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 47emem) {
 	.text-center-sm-only {
 		text-align: center;
 	}
