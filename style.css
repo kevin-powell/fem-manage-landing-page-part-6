@@ -44,7 +44,8 @@
 	--size-900: 5rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
+
 	:root {
 		--fs-body: var(--fs-500);
 		--fs-primary-heading: var(--fs-900);
