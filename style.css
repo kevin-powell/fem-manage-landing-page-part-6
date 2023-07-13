@@ -212,7 +212,7 @@ p[data-width='wide'] {
 	color: var(--clr-accent-400);
 }
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
 	.primary-header[data-overlay] {
 		positon: relative;
 	}
@@ -569,11 +569,12 @@ input:where([type='text'], [type='email'], ) {
 
 .a11y-slider-dots li button.active {
 	background: var(--clr-accent-400);
+
 }
 
 /* hero */
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
 	.hero__image {
 		order: -1;
 	}
@@ -686,7 +687,7 @@ input:where([type='text'], [type='email'], ) {
 	margin-inline: auto;
 }
 
-@media (max-width: 47emem) {
+@media (max-width: 47em) {
 	.text-center-sm-only {
 		text-align: center;
 	}
