@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "a11y-slider": "^0.4.22"
   }
 }
